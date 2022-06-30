@@ -1,5 +1,6 @@
 <template>
   <h1>Reaction Timer</h1>
+  <p>How quick can you click the button?</p>
   <button @click="start" :disabled="isPlaying">play</button>
   <ClickBlock v-if="isPlaying" :delay="delay" @end="endGame" />
   <GameResults v-if="showResults" :score="score" />
