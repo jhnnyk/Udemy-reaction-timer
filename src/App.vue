@@ -2,15 +2,16 @@
   <h1>Reaction Timer</h1>
   <button @click="start" :disabled="isPlaying">play</button>
   <ClickBlock v-if="isPlaying" :delay="delay" @end="endGame" />
-  <p v-if="showResults">Reaction time: {{ score }} milliseconds</p>
+  <GameResults v-if="showResults" :score="score" />
 </template>
 
 <script>
 import ClickBlock from './components/ClickBlock.vue';
+import GameResults from './components/GameResults.vue';
 
 export default {
   name: 'App',
-  components: { ClickBlock },
+  components: { ClickBlock, GameResults },
   data() {
     return {
       isPlaying: false,
