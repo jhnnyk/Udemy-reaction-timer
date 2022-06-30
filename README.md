@@ -1,6 +1,7 @@
 # Reaction Timer
 
-Quick little project from a Udemy course on Vue3. Deployed to firebase hosting:
+Quick little project from a Udemy course on Vue3.
+Deployed to firebase hosting:
 https://reaction-timer-a77bd.web.app
 
 ## Project setup
